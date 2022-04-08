@@ -10,8 +10,8 @@ const NavBar = () => {
           <Link to='/'>
             Home
           </Link>
-          <Link to='#'>
-            About me
+          <Link to='/projects'>
+            Projects
           </Link>
           <Link to='#'>
             Contact Me
