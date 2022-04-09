@@ -19,6 +19,7 @@ const ProjectsPage = () => {
           Applied userContext to avoid uneccesary prop drilling as well.
         </p>
       </div>
+      <h3>More Coming Soon...</h3>
     </div>
   )
 }

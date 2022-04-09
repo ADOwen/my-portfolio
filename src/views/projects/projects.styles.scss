@@ -2,6 +2,7 @@
   width: 100%;
   height: 97vh;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -16,7 +17,7 @@
 
     img {
       width: 100%;
-      height: 50%;
+      height: 100%;
       justify-self: center;
     }
 
