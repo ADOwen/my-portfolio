@@ -13,9 +13,9 @@ const NavBar = () => {
           <Link to='/projects'>
             Projects
           </Link>
-          <Link to='#'>
+          <a href = "mailto: adowen88@gmail.com">
             Contact Me
-          </Link>
+          </a>
         </div>
       </div>
       <Outlet/>

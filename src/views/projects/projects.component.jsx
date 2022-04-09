@@ -13,9 +13,9 @@ const ProjectsPage = () => {
           <img src={crownImage} alt="image of a retail store" />
         </a>
         <p>
-          This is an e-commerce website I engineered using React as the front end framework. 
+          An e-commerce website I engineered using React as the front end framework. 
           I leveraged Firebase for User Auth as well as Firestore's noSQL Database for Product 
-          and User data storage. I utilized React hooks to maintain state and fetch database data only when necessary.
+          and User data storage. I utilized React hooks to maintain state and fetch database data when necessary.
           Applied userContext to avoid uneccesary prop drilling as well.
         </p>
       </div>
