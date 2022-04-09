@@ -9,7 +9,7 @@ const ProjectsPage = () => {
     <div className='projects-page-container'>
       <div className="project-container">
         <h1>Crown Clothing</h1>
-        <a href='https://jovial-douhua-e8dc23.netlify.app/' target='_blank'>
+        <a href='https://allans-crown-clothing.netlify.app/' target='_blank'>
           <img src={crownImage} alt="image of a retail store" />
         </a>
         <p>
