@@ -1,24 +1,37 @@
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import Project from '../../components/project/project.component'
 
 import './projects.styles.scss'
 
 import crownImage from '../../assets/crown-clothing-img.jpg'
 
+
 const ProjectsPage = () => {
+  
+
+  const [projects, setProjects] = useState([
+      {
+        id: 1,
+        title: 'Crown Clothing',
+        url: 'https://allans-crown-clothing.netlify.app/',
+        description: `
+                      An e-commerce website I engineered using React. 
+                      I leveraged Firebase for User Auth and utilized a Firebase NoSQL DB to store user and product data. 
+                      Additionally I applied Context API for state management. 
+                    `,
+        image: crownImage,
+        altImgDes: 'Image of a clothing department store'
+      },
+      
+    ])
+
+  useEffect(() => {
+    setProjects(projects)
+  }, [projects])
+
   return (
     <div className='projects-page-container'>
-      <div className="project-container">
-        <h1>Crown Clothing</h1>
-        <a href='https://allans-crown-clothing.netlify.app/' target='_blank'>
-          <img src={crownImage} alt="image of a retail store" />
-        </a>
-        <p>
-          An e-commerce website I engineered using React as the front end framework. 
-          I leveraged Firebase for User Auth as well as Firestore's noSQL Database for Product 
-          and User data storage. I utilized React hooks to maintain state and fetch database data when necessary.
-          Applied userContext to avoid uneccesary prop drilling as well.
-        </p>
-      </div>
+      {projects.map(project => <Project key={project.id} {...project}/>)}
       <h3>More Coming Soon...</h3>
     </div>
   )
