@@ -10,14 +10,18 @@
     width: 25%;
     margin-left: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     
-    
-    a{
-      color: white;
-      text-decoration: none;
+    .nav-items {
+      width: 50px;
+      margin: 40px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
+    
   }
 
 }

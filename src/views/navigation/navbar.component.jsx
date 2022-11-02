@@ -7,15 +7,21 @@ const NavBar = () => {
     <>
       <div className="nav-container">
         <div className="nav-links">
-          <Link to='/'>
-            Home
-          </Link>
-          <Link to='/projects'>
-            Projects
-          </Link>
-          <a href = "mailto: adowen88@gmail.com">
-            Contact Me
-          </a>
+          <div className='nav-items'>
+            <Link to='/'>
+              Home
+            </Link>
+          </div>
+          <div className="nav-items">
+            <Link to='/projects'>
+              Projects
+            </Link>
+          </div>
+          <div className="nav-items">
+            <a href = "mailto: adowen88@gmail.com">
+              Contact
+            </a>
+          </div>
         </div>
       </div>
       <Outlet/>
