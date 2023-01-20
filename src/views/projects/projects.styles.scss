@@ -3,6 +3,7 @@
   height: 95%;
   display:flex;
   justify-content: center;
+  align-items: center;
 
   @media (max-width: 890px) {
     flex-direction: column;
