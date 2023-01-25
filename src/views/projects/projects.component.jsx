@@ -53,19 +53,15 @@ const ProjectsPage = () => {
   }, [])
 
   return (
-    <>
-      <div className='slideshow'>
-        <button className='slide-button icon' onClick={moveLeft}>
-          <img src={LeftArrow} alt="left arrow icon" />
-        </button>
-        {projectArr && <Card animationState={animationState} {...projectList[cardIdx]}/>}      
-        <button className='slide-button icon' onClick={moveRight}>
-          <img src={RightArrow} alt="right arrow"/>
-        </button>
-      </div>
-      <p>More Coming Soon...</p>
-    </>
-
+    <div className='slideshow'>
+      <button className='slide-button icon' onClick={moveLeft}>
+        <img src={LeftArrow} alt="left arrow icon" />
+      </button>
+      {projectArr && <Card animationState={animationState} {...projectList[cardIdx]}/>}      
+      <button className='slide-button icon' onClick={moveRight}>
+        <img src={RightArrow} alt="right arrow"/>
+      </button>
+    </div>
   )
 }
 

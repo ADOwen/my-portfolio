@@ -9,12 +9,14 @@ import SlideShow from './views/projects/projects.component';
 
 function App() {
   return (    
-      <Routes>
-        <Route path ='/' element={ <NavBar/> }>
-          <Route index element={ <Home /> }/>
-          <Route path='projects' element={<SlideShow />}/>
-        </Route>
-      </Routes>  
+      <div className='App'>
+        <Routes>
+          <Route path ='/' element={ <NavBar/> }>
+            <Route index element={ <Home /> }/>
+            <Route path='projects' element={<SlideShow />}/>
+          </Route>
+        </Routes>
+      </div>
   );
 }
 
