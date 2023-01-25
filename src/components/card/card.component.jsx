@@ -1,9 +1,9 @@
 import React from 'react'
 import './card.styles.scss'
 
-function Card({title, url, description, image, altImgDes}) {
+function Card({title, url, description, image, altImgDes, animationState}) {
   return (
-      <div className="project-container">
+      <div className={`project-container ${animationState}`} >
         <div className="card-header">
           <h1>{title}</h1>
         </div>

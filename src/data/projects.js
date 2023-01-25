@@ -1,5 +1,5 @@
-import crownImage from '../../assets/crown-clothing-img.jpg'
-import roboImage from '../../assets/robo-portfolio.jpg';
+import crownImage from '../assets/crown-clothing-img.jpg'
+import roboImage from '../assets/robo-portfolio.jpg';
 
 const projectList = [
   {
