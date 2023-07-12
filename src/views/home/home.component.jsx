@@ -1,5 +1,3 @@
-import header from '../../assets/header.jpg'
-
 import './home.styles.scss'
 
 const Home = () => {

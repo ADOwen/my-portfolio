@@ -17,7 +17,7 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,6 +27,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <style >
+      /* critical styles for the first paint */
+    </style>
     <title>Allan's Portfolio</title>
   </head>
   <body>
@@ -42,5 +45,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      const loadStyleSheet = src => {
+        if (document.createStyleSheet) {
+          document.createStyleSheet(src)
+        } else {
+          const stylesheet= document.createElement('link')
+          stylesheet.href = src
+          stylesheet.type ='text/css'
+          stylesheet.rel="stylesheet"
+          document.getElementsByTagName('head')[0].appendChild(stylesheet)
+        }
+      }
+
+      window.onload = function () {
+        loadStyleSheet("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap")
+      }
+    </script>
   </body>
 </html>

@@ -1,10 +1,10 @@
+import React, { Suspense} from 'react'
 import { Routes, Route } from 'react-router-dom'
-import './App.css';
 
 import NavBar from './components/navbar/navbar.component';
-import Home from './views/home/home.component';
-// import ProjectsPage from './views/projects/projects.component'
-import SlideShow from './views/projects/projects.component';
+
+const Home = React.lazy(() => import('./views/home/home.component'))
+const SlideShow = React.lazy(() => import('./views/projects/projects.component'))
 
 
 function App() {
@@ -12,8 +12,22 @@ function App() {
       <div className='App'>
         <Routes>
           <Route path ='/' element={ <NavBar/> }>
-            <Route index element={ <Home /> }/>
-            <Route path='projects' element={<SlideShow />}/>
+            <Route 
+              index 
+              element={ 
+                <Suspense fallback={<>...</>}>
+                  <Home /> 
+                </Suspense>
+              }
+            />
+            <Route 
+              path='projects' 
+              element={
+                <Suspense fallback={<>...</>}>
+                  <SlideShow />
+                </Suspense>
+              }
+            />
           </Route>
         </Routes>
       </div>

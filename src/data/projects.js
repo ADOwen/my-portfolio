@@ -1,5 +1,6 @@
 import crownImage from '../assets/crown-clothing-img.jpg'
 import roboImage from '../assets/robo-portfolio.jpg';
+import gameHubImage from '../assets/game-hub-sm.png'
 
 const projectList = [
   {
@@ -15,7 +16,18 @@ const projectList = [
     altImgDes: 'Image of a clothing department store'
   },
   {
-    id: 1,
+    id: 2,
+    title: 'GameHub',
+    url: 'https://game-hub-allan.vercel.app/',
+    description: `
+                  A game discovery app where you can search for video games.
+                `,
+    image: gameHubImage,
+    altImgDes: 'Image of a game discovery website'
+  },
+  
+  {
+    id: 3,
     title: 'Robofriends',
     url: 'https://adowen.github.io/robofriends/',
     description: `
