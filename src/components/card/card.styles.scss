@@ -16,7 +16,7 @@
   @media (max-width: 890px) {
     font-size: x-small;
     width: 307px;
-    height: 342px;
+    height: 373px;
 
   }
   .card-header {
@@ -70,10 +70,16 @@
   .card-icons {
     margin-top: 5px;
 
+    @media (max-width: 890px) {
+      margin-top: 0;;
+      
+    }
       .card-item {
         padding:10px;
         width: 100x;
         height: 30px;
+        
+
 
         .icon {
           width: 25px;
