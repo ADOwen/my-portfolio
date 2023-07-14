@@ -67,11 +67,38 @@
     }
   }
 
+  .card-icons {
+    margin-top: 5px;
+
+      .card-item {
+        padding:10px;
+        width: 100x;
+        height: 30px;
+
+        .icon {
+          width: 25px;
+          height: 25px;
+          color: black;
+      
+        }
+
+        .icon:hover {
+          color: blue;
+        }
+      }
+
+
+  }
+
 }
+
 
 .project-container:hover, .project-container:focus {
   background-color: rgb(243, 222, 83);
   transform: scale(1.05);
+  .icon {
+    background-color: rgb(243, 222, 83);
+  }
 }
 
 .fade-out {

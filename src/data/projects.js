@@ -7,6 +7,7 @@ const projectList = [
     id: 1,
     title: 'Crown Clothing',
     url: 'https://allans-crown-clothing.netlify.app/',
+    github: 'https://github.com/ADOwen/crown-clothing',
     description: `
                   An e-commerce website I engineered using React. 
                   I leveraged Firebase for User Auth and utilized a Firebase NoSQL DB to store user and product data. 
@@ -19,8 +20,10 @@ const projectList = [
     id: 2,
     title: 'GameHub',
     url: 'https://game-hub-allan.vercel.app/',
+    github: 'https://github.com/ADOwen/game-hub',
     description: `
-                  A game discovery app where you can search for video games.
+                  A game discovery app where you can search for video games using
+                  the Rawg.io API.
                 `,
     image: gameHubImage,
     altImgDes: 'Image of a game discovery website'
@@ -30,6 +33,7 @@ const projectList = [
     id: 3,
     title: 'Robofriends',
     url: 'https://adowen.github.io/robofriends/',
+    github: 'https://github.com/ADOwen/robofriends',
     description: `
                   A react app where you can search for robots. Uses Redux for state managment.
                 `,
